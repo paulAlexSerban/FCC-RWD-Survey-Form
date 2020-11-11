@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+* {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+body {
+  margin: 0
+}
+
+.basepage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #05C46B
+}
+
+.header__base {
+  width: 80%
+}
+
+.header__title,
+.header__description {
+  text-align: center
+}
+
+.header__title {
+  font-size: 2.4rem
+}
+
+.header__description {
+  font-size: 1.8rem
+}
+
+.main__base {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 80%
+}
+
+.form__base {
+  background-color: #d3d3d3;
+  -webkit-box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  padding: 28px 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 60%
+}
+
+.form__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 28px;
+  text-align: left
+}
+
+.form__description {
+  font-size: 1.6rem
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 1.6rem
+}
+
+.form__label--radio {
+  font-size: 1.4rem
+}
+
+.form__label:last-child {
+  margin-bottom: 0
+}
+
+.form__input,
+.form__textarea {
+  display: block;
+  width: 100%;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  padding: 7px 21px;
+  border: 1px solid #777
+}
+
+.form__select {
+  font-size: 1.4rem;
+  padding: 7px 21px
+}
+
+.form__button {
+  font-size: 1.4rem;
+  margin: 1px auto 14px;
+  width: 100%;
+  border: 1px solid #777;
+  font-family: inherit;
+  padding: 14px 21px;
+  background-color: #078602;
+  border-radius: 2px
+}

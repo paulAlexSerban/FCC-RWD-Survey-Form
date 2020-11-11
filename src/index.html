@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../build/styles/init-styles.min.css">
+  <title>Chit-Chat Cocktails Survey Form</title>
+</head>
+
+<body class="basepage">
+  <header class="header__base">
+    <h1 class="header__title" id="title">Chit-Chat Cocktails Survey Form</h1>
+    <p class="header__description" id="description"> Thank you for taking te time to help us deliver professional services.</p>
+  </header>
+  <main class="main__base">
+    <form class="form__base" action="" id="survey-form">
+      <div class="form__control">
+        <label class="form__label" for="name" id="name-label">Name: </label>
+        <input class="form__input" type="text" name="name" id="name" placeholder="Enter your name please" required>
+      </div>
+
+      <div class="form__control">
+        <label class="form__label" for="email" id="email-label">Email: </label>
+        <input class="form__input" type="email" name="email" id="email" placeholder="Enter your email please" required>
+      </div>
+
+      <div class="form__control">
+        <label class="form__label" for="age" id="number-label">Age: </label>
+        <input class="form__input" type="number" name="age" id="number" min="18" max="65"
+          placeholder="Enter your age please" required>
+      </div>
+
+      <div class="form__control">
+        <label class="form__label" for="groupsize">Select group size:</label>
+          <select class="form__select" name="groupsize" id="dropdown">
+            <option value="small-50">0 - 50 pax</option>
+            <option value="medium-100">50 - 100 pax</option>
+            <option value="big-200">100 - 200 pax</option>
+          </select>
+      </div>
+
+      <div class="form__control">
+        <p class="form__description">Type of occasion:</p>
+        <label class="form__label form__label--radio" for="homeparty" >
+          <input type="radio" name="occasion" id="homeparty" value="homeparty">
+          Home Party
+        </label>
+          
+        <label class="form__label form__label--radio" for="officeparty">
+          <input type="radio" name="occasion" id="officeparty" value="office">
+          Office Party
+        </label>
+          
+        <label class="form__label form__label--radio" for="other">
+          <input type="radio" name="occasion" id="other" value="other">
+          Other occasion
+        </label>
+      </div>
+
+      <div class="form__control">
+        <p class="form__description">What is the spirit of choice:</p>
+        <label for="vodka">
+          <input type="checkbox" id="vodka" name="spirit" value="Vodka">
+          Vodka
+        </label>
+        <label for="rom">
+          <input type="checkbox" id="rom" name="spirit" value="Rom">
+          Rom
+        </label>
+        <label for="gin">
+          <input type="checkbox" id="gin" name="spirit" value="Gin">
+          Gin
+        </label>
+        <label for="tequila">
+          <input type="checkbox" id="tequila" name="spirit" value="Tequila">
+          Tequila
+        </label>
+        <label for="whiskey">
+          <input type="checkbox" id="whiskey" name="spirit" value="Whiskey">
+          Whiskey
+        </label>
+        <label for="cahcaca">
+          <input type="checkbox" id="cahcaca" name="spirit" value="Cahcaca">
+          Cachaca
+        </label>
+      </div>
+
+      <div class="form__control">
+        <p class="form__description">Enter your comments here:</p>
+        <textarea class="form__textarea" id="comments" name="comments" rows="4" cols="50" placeholder="Enter your observations here"></textarea>
+      </div>
+
+      <div class="form__control">
+        <button class="form__button" id="submit">Submit</button>
+      </div>
+
+    </form>
+  </main>
+  <footer class="footer__base">
+
+  </footer>
+</body>
+
+</html>

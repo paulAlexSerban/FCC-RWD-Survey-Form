@@ -1,0 +1,66 @@
+@import './common/variables';
+
+$cmpName: 'form';
+
+.#{$cmpName} {
+  &__base {
+    background-color: $lightgrey;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    padding: ($baseHeight * 2) $baseWidth;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+
+  &__control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $baseHeight * 2;
+    text-align: left;
+  }
+
+  &__description {
+    font-size: $regular-font-size;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: $baseHeight;
+    font-size: $regular-font-size;
+
+    &--radio {
+      font-size: $normal-font-size;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input,
+  &__textarea {
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    font-size: $small-font-size;
+    padding: ($baseHeight / 2) $baseWidth;
+    border: 1px solid $darkgrey;
+  }
+
+  &__select {
+    font-size: $normal-font-size;
+    padding: ($baseHeight /2) $baseWidth;
+  }
+
+  &__button {
+    font-size: $normal-font-size;
+    margin: 1px auto $baseHeight;
+    width: 100%;
+    border: 1px solid $darkgrey;
+    font-family: inherit;
+    padding: ($baseHeight) $baseWidth;
+    background-color: $elf-green;
+    border-radius: 2px;
+  }
+}

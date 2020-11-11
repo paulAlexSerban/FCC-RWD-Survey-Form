@@ -1,0 +1,10 @@
+@import './common/variables';
+
+$cmpName: 'basepage';
+
+.#{$cmpName} {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $minty-green;
+}

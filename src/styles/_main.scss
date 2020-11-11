@@ -1,0 +1,9 @@
+$cmpName: 'main';
+
+.#{$cmpName} {
+  &__base {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+}
